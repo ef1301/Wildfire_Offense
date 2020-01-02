@@ -38,18 +38,29 @@ body {
     height: 15%; /* Should be removed. Only for demonstration */
 }
 
-/* Style the footer */
-.footer {
-    background-color: #f1f1f1;
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-}
 
 .container{
+    background-color: #333;
+    position: relative;
     margin-top: 4%;
     margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    width: 75%;
+    padding: 4%;
+}
+
+.container h2 {
+    color: white;
+    
+}
+
+.bottom-right {
+    text-align: right;
+    position: absolute;
+    bottom: 3%;
+    right: 0%;
 }
 
 img {

@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
 }
 
 /* Style the top navigation bar */
@@ -40,12 +41,14 @@ body {
 /* Style the footer */
 .footer {
     background-color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
     padding: 10px;
 }
 
 .container{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     text-align: center;
 }
 

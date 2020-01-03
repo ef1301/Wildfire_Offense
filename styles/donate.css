@@ -1,3 +1,21 @@
+/* FONTS -------------------------------------------------------*/
+@font-face { 
+    font-family: cosima;
+    src: url("../fonts/cosima.otf") format("opentype");
+}
+
+@font-face {
+    font-family: clab;
+    src: url("../fonts/clab_reg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: gnuolane;
+    src: url("../fonts/gnuolane.ttf");
+}
+
+/* GENERAL -----------------------------------------------------*/
+
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +30,10 @@ body {
 /* TOP BAR -----------------------------------------------------*/
 .header {
     background-color: red;
+    font-family: clab;
     padding: 1.5%;
+    top: 0;
+    width: 100%;
 }
 
 .header h1{
@@ -20,8 +41,11 @@ body {
 }
 
 .topnav {
-    width: 40%;
-    float: right;     
+    margin: 0;
+    width: 27%;
+    font-family: clab;
+    float: right;    
+    /* display: inline; */
     overflow: hidden;
     background-color: red;
 }
@@ -32,13 +56,28 @@ body {
     color: black;
     text-align: right;
     padding: 2% 5%;
-    font-size: 1.15em;
+    font-size: 1.15vw;
     text-decoration: none;
 }
 
 .topnav a:hover {
-    background-color: #333;
     color: #ddd;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav li {
+    float:left;
+    padding: 2.5%;
+}
+
+.topnav li:not(:last-child) { 
+    border-right:solid 1px #fff;/* This will not give border to last li element */
 }
 
 /* CONTAINER-------------------------------------------*/

@@ -16,9 +16,12 @@ body {
 /* TOP BAR -----------------------------------------------------*/
 .header {
     background-color: red;
+    font-family: clab;
     padding: 1.5%;
-    height:
+    top: 0;
+    width: 100%;
 }
+
 
 .header h1{
     display: inline;
@@ -27,8 +30,9 @@ body {
 .topnav {
     margin: 0;
     width: 27%;
+    font-family: clab;
     float: right;    
-    display: inline;
+    /* display: inline; */
     overflow: hidden;
     background-color: red;
 }

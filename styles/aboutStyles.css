@@ -1,3 +1,4 @@
+
 /* Unused -----------------------------------*/
 /*.mainbanner {
 	height: auto;
@@ -12,6 +13,9 @@
 }*/
 
 /* About Containers -------------------------*/
+
+
+
 .abcontainer {
 	background-color: rgba(34, 34, 34, 0.9);
 	position: relative;
@@ -54,6 +58,7 @@
   float: left;
   width: 32.32%;
   padding: 0.5%;
+  height: 30%;
 }
 
 .column h2 {
@@ -71,4 +76,26 @@
   content: "";
   display: table;
   clear: both;
+}
+
+/* Social Media Icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+
+.footer_text
+{
+  display: inline-block;
+}
+
+.social_icons
+{
+  display: inline-block;
+  margin-left: 25%;
 }

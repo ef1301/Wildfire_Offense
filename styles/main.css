@@ -3,71 +3,79 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
 
-/* Style the top navigation bar */
-.topnav {
-    float: right;
-    overflow: hidden;
-    background-color: #f2f2f2;
+/* TOP BAR -----------------------------------------------------*/
+.header {
+    background-color: red;
+    padding: 1.5%;
 }
 
-/* Style the topnav links */
+.header h1{
+    display: inline;
+}
+
+.topnav {
+    width: 25%;
+    float: right;    
+    display: inline;
+    overflow: hidden;
+    background-color: red;
+}
+
 .topnav a {
     float: left;
     display: block;
     color: black;
-    text-align: center;
-    padding: 1% 1%;
+    text-align: right;
+    padding: 2% 5%;
+    font-size: 1.15em;
     text-decoration: none;
 }
 
-/* Change color on hover */
 .topnav a:hover {
     background-color: #333;
     color: #ddd;
 }
 
-/* Style the content */
-.header {
-    background-color: red;
-    padding: 10px;
-    height: 15%; /* Should be removed. Only for demonstration */
-}
-
-.header h1{
-    margin-left: 1%;
-}
-
-
+/* CONTAINER-------------------------------------------*/
 .container{
     background-color: #333;
     position: relative;
-    margin-top: 4%;
-    margin-bottom: 4%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding: 1%;
 }
 
-.container h1, h2 ,p{
+.container h1, h2 {
     color: white;
+}
+
+/* PLACEMENT OVER IMAGES --------------------------------*/
+.top-left {
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    left: 23%;
 }
 
 .bottom-right {
     text-align: right;
     position: absolute;
-    bottom: 15%;
-    right: 24%;
+    bottom: 10%;
+    right: 23%;
 }
 
 .centered {
-    background-color: red;
     padding: 1%;
     position: absolute;
     top: 50%;
@@ -75,6 +83,51 @@ body {
     transform: translate(-50%, -50%);
 }
 
-img {
-    
+.split {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    z-index:1;
+    top: 0;
+    margin-left: 5%;
+    overflow-x: hidden;
+    padding-top: 15%;
+    color: white;
+    text-align:left;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right:0;
+}
+
+.bgimg-1, .bgimg-2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("../img/fire.jpeg");
+    height: 40%;
+}
+
+.bgimg-2 {
+    background-image: url("../img/destruction.jpg");
+    height: 40%;
+}
+
+h2 a {
+    color: red;
+}
+
+h2 a:visited {
+    color: red;
+}
+
+img {    
 }

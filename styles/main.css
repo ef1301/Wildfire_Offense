@@ -1,6 +1,26 @@
+/* FONTS -------------------------------------------------------*/
+@font-face { 
+    font-family: cosima;
+    src: url("../fonts/cosima.otf") format("opentype");
+}
+
+@font-face {
+    font-family: clab;
+    src: url("../fonts/clab_reg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: gnuolane;
+    src: url("../fonts/gnuolane.ttf");
+}
+}
+
+
+/* GENERAL -----------------------------------------------------*/
+
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 html, body {
@@ -16,7 +36,11 @@ body {
 /* TOP BAR -----------------------------------------------------*/
 .header {
     background-color: red;
+    font-family: clab;
     padding: 1.5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .header h1{
@@ -25,10 +49,12 @@ body {
 
 .topnav {
     width: 25%;
+    font-family: clab;
     float: right;    
     display: inline;
     overflow: hidden;
     background-color: red;
+
 }
 
 .topnav a {
@@ -42,19 +68,51 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #333;
     color: #ddd;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav li {
+    float:left;
+    padding: 2.5%;
+}
+
+.topnav li:not(:last-child) { 
+    border-right:solid 1px #fff;/* This will not give border to last li element */
+}
+
+/* BOTTOM BAR------------------------------------------*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    font-family: gnuolane;
+    padding: 0.6%;
+    height: 7%;
+    color: #ededed;
+    letter-spacing: 2px;
 }
 
 /* CONTAINER-------------------------------------------*/
 .container{
-    background-color: #333;
+    background-color: #222;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding: 1% 1%;
     height: auto;
+    font-family: clab;
+    box-shadow: 4px 4px #222;
 }
 
 .container h1, h2 {
@@ -67,6 +125,8 @@ body {
     position: absolute;
     top: 10%;
     left: 23%;
+    letter-spacing: 1px;
+    font-family: gnuolane;
 }
 
 .bottom-right {
@@ -74,6 +134,8 @@ body {
     position: absolute;
     bottom: 10%;
     right: 23%;
+    letter-spacing: 1px;
+    font-family: gnuolane;
 }
 
 .centered {
@@ -82,6 +144,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: clab;
+    box-shadow: 2px 2px 4px #222;
+}
+
+.centered:hover {
+    color: black;
 }
 
 .split {

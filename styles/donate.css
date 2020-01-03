@@ -25,7 +25,7 @@ body {
     background-image: url(../img/080818_WhitebarkPlanting_Ouellet_1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    opacity: 0.98;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -172,17 +172,25 @@ body {
 	font-weight: 500;
 	font-size: 12px;
 	text-transform: uppercase;
-	margin-top: 10px;
+	margin-top: 1px;
 }
 
 h4{
+    display: inline-flex;
+    position: relative; 
     text-transform: none;
     text-align: center;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
     padding: 0px;
+    font-size: 40px;
     margin-bottom: 0px;
+    margin-left: 13%;
+    /* margin-right: 300px; */
 }
 #paragraph{
+    font-family: 'Montserrat', sans-serif;
     color: white;
     text-transform: none;
     text-align: center;
@@ -199,8 +207,8 @@ h4{
 }
 
 .donation-box {
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 450px;
 	background-color: #F5F5F5;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -223,7 +231,8 @@ h4{
 	text-align: center;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	font-size: 15px;
+    font-size: 15px;
+    font-family: clab;
 }
 
 .donation-box #donate-button {
@@ -233,7 +242,8 @@ h4{
 	text-align: center;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	font-size: 18px;
+    font-size: 18px;
+    font-family: clab;
 	bottom: 0px;
 	position: absolute;
 	cursor: pointer;
@@ -262,7 +272,7 @@ h4{
 }
 
 ::-webkit-input-placeholder {
-   color: #cdcdcd;
+   color: grey;
    font-size: 15px;
 }
 
@@ -361,7 +371,7 @@ h4{
 
 .switch {
   position: absolute;
-  top: 190px;
+  top: 210px;
   left: 75px;
   margin: 20px auto;
   height: 26px;
@@ -430,7 +440,7 @@ h4{
 
 .checkboxes {
 	position: absolute;
-	top: 242px;
+	top: 270px;
 	left: 100px;
 }
 

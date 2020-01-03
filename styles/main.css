@@ -191,6 +191,9 @@ body {
     color: #f9cb25;
 }
 
+.container img {
+    width: 60%;
+}
 /* PLACEMENT OVER IMAGES --------------------------------*/
 .top-left {
     width: 40%;
@@ -273,34 +276,6 @@ body {
 
 .centered h2 {
     font-size: 5vw;
-}
-
-/* DIVIDED CONTAINER ------------------------------------------------*/
-.split {
-    height: 100%;
-    width: 50%;
-    display: inline;
-    overflow: hidden;
-    color: white;
-    text-align:left;
-}
-
-.left {
-    left: 0;
-    width: 50%
-}
-
-.left img {
-    
-}
-
-.right {
-    right: 0;	     
-    width: 50%;
-}
-
-.right img {
-
 }
 
 /* Parallax ------------------------------------------------*/

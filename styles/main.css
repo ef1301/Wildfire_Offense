@@ -41,6 +41,7 @@ body {
     width: 100%;
 }
 
+
 .header h1{
     display: inline;
 }
@@ -60,7 +61,7 @@ body {
     float: left;
     display: block;
     color: black;
-    text-align: right;
+    text-align: center;
     padding: 2% 5%;
     font-size: 1.15vw;
     text-decoration: none;
@@ -115,6 +116,7 @@ body {
 
 .container h1, h2 {
     color: white;
+    font-size: 1.25vw;
 }
 
 .container h1 {
@@ -141,6 +143,7 @@ body {
 
 /* PLACEMENT OVER IMAGES --------------------------------*/
 .top-left {
+    width: 40%;
     text-align: left;
     position: absolute;
     top: 10%;
@@ -150,7 +153,12 @@ body {
     font-size: 22px;
 }
 
+.top-left h2 {
+    font-size: 5vw;
+}
+
 .bottom-right {
+    width: 40%;
     text-align: right;
     position: absolute;
     bottom: 10%;
@@ -158,6 +166,10 @@ body {
     letter-spacing: 1px;
     font-family: gnuolane;
     font-size: 22px;
+}
+
+.bottom-right h2 {
+    font-size: 5vw;
 }
 
 .centered {
@@ -208,6 +220,10 @@ body {
 
 .centered a:visited {
     color: black;
+}
+
+.centered h2 {
+    font-size: 5vw;
 }
 
 .split {

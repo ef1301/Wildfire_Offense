@@ -28,141 +28,7 @@ body {
     opacity: 0.98;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
-    /* background-color: white; */
 }
-
-/* TOP BAR -----------------------------------------------------*/
-.header {
-    background-color: red;
-    font-family: clab;
-    padding: 1.5%;
-    top: 0;
-    width: 100%;
-}
-
-.header h1{
-    display: inline;
-}
-
-.topnav {
-    margin: 0;
-    width: 27%;
-    font-family: clab;
-    float: right;    
-    /* display: inline; */
-    overflow: hidden;
-    background-color: red;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: right;
-    padding: 2% 5%;
-    font-size: 1.15vw;
-    text-decoration: none;
-}
-
-.topnav a:hover {
-    color: #ddd;
-}
-
-.topnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.topnav li {
-    float:left;
-    padding: 2.5%;
-}
-
-.topnav li:not(:last-child) { 
-    border-right:solid 1px #fff;/* This will not give border to last li element */
-}
-
-/* CONTAINER-------------------------------------------*/
-.container{
-    background-color: #333;
-    position: relative;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 1%;
-}
-
-.container h1, h2 ,p{
-    color: white;
-}
-
-.bottom-right {
-    text-align: right;
-    position: absolute;
-    bottom: 15%;
-    right: 24%;
-}
-
-.centered {
-    padding: 1%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.split {
-    height: 100%;
-    width: 50%;
-    position: relative;
-    z-index:1;
-    top: 0;
-    margin-left: 5%;
-    overflow-x: hidden;
-    padding-top: 15%;
-    color: white;
-    text-align:left;
-}
-
-.left {
-    left: 0;
-}
-
-.right {
-    right:0;
-}
-
-/* BOTTOM BAR------------------------------------------*/
-.footer, .push {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #111;
-    font-family: gnuolane;
-    padding: 0.5%;
-    height: 7%;
-    color: #ededed;
-    letter-spacing: 2px;
-}
-
-/* body{
-    background-image: url("../img/endingDestruction.jpg");
-} */
-
-/* .form{
-    text-align: center;
-} */
-
-/* .footer{
-    text-align: center;
-} */
 
 /* DONATION-------------------------------------------------------------------------------- */
 
@@ -182,93 +48,92 @@ h4{
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    width: 400px;
+    width: 50%;
     padding: 0px;
     font-size: 40px;
     margin-bottom: 0px;
     margin-left: 13%;
-    /* margin-right: 300px; */
 }
+
 #paragraph{
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-transform: none;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5vw;
     padding: 1%;
     margin: 1%;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .custom{
     color: black;
     text-align: center;
-    margin: 2px;
+    margin: 2%;
 }
 
 .donation-box {
-	width: 400px;
-	height: 450px;
-	background-color: #F5F5F5;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	position: relative;
+    width: 28%;
+    height: 50%;
+    background-color: #F5F5F5;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    position: relative;
     display: inline-block;
     margin-left: 8%;
-	
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
+    
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
 
 .donation-box .title {
-	background-color: red;
-	width: 100%;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	color: white;
-	text-align: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
+    background-color: red;
+    width: 100%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-size: 15px;
     font-family: clab;
 }
 
 .donation-box #donate-button {
-	background-color: red;
-	width: 100%;
-	color: white;
-	text-align: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
-    font-size: 18px;
+    background-color: red;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 1.25vw;
     font-family: clab;
-	bottom: 0px;
-	position: absolute;
-	cursor: pointer;
-	/* font-weight: 800; */
+    bottom: 0px;
+    position: absolute;
+    cursor: pointer;
 }
 
 .donation-box .fields {
-	width: 59%;
-	display: block;
-	position: absolute;
-	top: 60px;
-	left: 15px;
+    width: 59%;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 15px;
 }
 
 .donation-box .fields input {
-	width: 90%;
-	font-size: 17px;
-	padding: 10px;
-	border-radius: 4px;
-	border-width: 0px;
-	color: #5C5C5C;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	margin-bottom: 10px;
-	-webkit-font-smoothing: antialiased;
+    width: 90%;
+    font-size: 1.17vw;
+    padding: 10px;
+    border-radius: 2%;
+    border-width: 0px;
+    color: #5C5C5C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-input-placeholder {
@@ -277,96 +142,83 @@ h4{
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #cdcdcd;
-   font-size: 15px;
+    color: #cdcdcd;
+    font-size: 15px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #cdcdcd;
-   font-size: 15px; 
+    color: #cdcdcd;
+    font-size: 15px; 
 }
 
 :-ms-input-placeholder {  
-   color: #cdcdcd;
-   font-size: 15px;
+    color: #cdcdcd;
+    font-size: 15px;
 }
 
 .donation-box .amount {
-	width: 30%;
-	display: block;
-	position: absolute;
-	top: 60px;
-	right: 15px;
+    width: 30%;
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 15px;
 }
 
 .donation-box .amount .button {
-	width: 100%;
-	background-color: gray;
-	margin-bottom: 10px;
-	text-align: center;
-	color: white;
-	padding: 15px 0px 15px 0px;
-	border-radius: 4px;
-	font-size: 20px;
-	cursor: pointer;
-	
-	-webkit-transition: 400ms background-color;
-	-moz-transition: 800ms opacity, 800ms right;
-	-ms-transition: 800ms opacity, 800ms right;
-	-o-transition: 800ms opacity, 800ms right;
-	transition: 200ms background-color;
+    width: 100%;
+    background-color: gray;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    padding: 15px 0px 15px 0px;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    
+    -webkit-transition: 400ms background-color;
+    -moz-transition: 800ms opacity, 800ms right;
+    -ms-transition: 800ms opacity, 800ms right;
+    -o-transition: 800ms opacity, 800ms right;
+    transition: 200ms background-color;
 }
 
 .donation-box .amount select{
     width: 100%;
-    height: 40px;
-	background-color: gray;
-	margin-bottom: 10px;
-	text-align: center;
-	color: white;
-	padding: 15px 0px 15px 0px;
-	border-radius: 4px;
-    font-size: 15px;
-	cursor: pointer;
+    height: 5%;
+    background-color: gray;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    padding: 15px 0px 15px 0px;
+    border-radius: 4px;
+    font-size: 1vw;
+    cursor: pointer;
 }
 
-/* .donation-box .amount .button:hover {
-	background-color: #393939;
-} */
-
-/* .donation-box .amount .button:active {
-	background-color: pink;
-} */
-
-/* .donation-box .amount .button:focus {
-	background-color: pink;
-}  */
-
-
 .donation-box .amount .button input {
-	min-width: 34px;
-	font-size: 20px;
-	font-weight: 500;
-	border: none;
-	background-color: transparent;
-	color: white;
-	font-family: Montserrat, sans-serif;
-	font-size: 20px;
-	font-stretch: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	border-bottom: 2px dashed white;
-	-webkit-font-smoothing: antialiased;
-	
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
+    min-width: 34px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    border-bottom: 2px dashed white;
+    -webkit-font-smoothing: antialiased;
+    
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
 
 .set-amount {
-	max-width: 96px;
+    max-width: 96px;
 }
 
 .switch {
@@ -439,69 +291,65 @@ h4{
 }
 
 .checkboxes {
-	position: absolute;
-	top: 270px;
-	left: 100px;
+    position: absolute;
+    top: 270px;
+    left: 100px;
 }
 
 .checkboxes label {
-	position: relative;
-	top: -8px;
-	font-size: 13px;
-	color: gray;
+    position: relative;
+    top: -8px;
+    font-size: 13px;
+    color: gray;
 }
 
 .checkbox {
-	-webkit-appearance: none;
-	background-color: #fafafa;
-	border: 1px solid red;
-	padding: 9px;
-	border-radius: 3px;
-	display: inline-block;
-	position: relative;
-  outline: none;
-	
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid red;
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
-/* 
-.checkbox:active, .checkbox:checked:active {
-	
-} */
 
 .checkbox:checked {
-	background-color: red;
-	border: 1px solid red;
-	color: white;
+    background-color: red;
+    border: 1px solid red;
+    color: white;
 }
 
 .checkbox:checked:after {
-	content: '\2714';
-	font-size: 14px;
-	position: absolute;
-	top: 0px;
-	left: 3px;
-	color: white;
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: white;
 }
 
 .confirm {
-	display: none;
-	position: absolute;
-	top: 335px;
-	left: 15px;
-	right: 15px;
-	font-size: 16px;
-	
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
+    display: none;
+    position: absolute;
+    top: 335px;
+    left: 15px;
+    right: 15px;
+    font-size: 16px;
+    
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
 
 .confirm i {
-	font-weight: bold;
-	text-decoration: underline;
-	font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: normal;
 }

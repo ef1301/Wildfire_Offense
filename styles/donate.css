@@ -22,7 +22,6 @@ body {
 .topnav {
     width: 40%;
     float: right;     
-    /* display: inline; */
     overflow: hidden;
     background-color: red;
 }
@@ -98,9 +97,3 @@ body {
     color: black;
 }
 
-
-/* ul ,li {
-}
-
-img {    
-} */

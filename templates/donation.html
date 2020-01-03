@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Climate Change</title>
+    <title>Wildfires Offense</title>
     <!--Allows input characters to be encoded using UTF-8 standards-->
     <meta charset="utf-8"> 
     <!--Allows size of webpage to adjust to differnt device screen sizes, e.g. phones vs desktops-->
@@ -9,11 +9,34 @@
     <meta name="author" content="Suchwinder Singh Ethan Sam Emily Fang Eva Yan">
     <meta name="description" content="Assignment 1 CUNY2x">
     <!--reference to CSS file storing the design of the webpage-->
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/donate.css">
 </head>
 <body>
-    <h1>Volunteer</h1>
-    <div>
-
+    <div class="header">
+        <img src="img/icon.png" style="width:2%">
+        <h1>Wildfires Offense</h1>
+        <div class="topnav">
+          <a class="active" href="">Home</a>
+          <a href="templates/about.html">About</a>
+          <a href="templates/donation.html">Donation</a>
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
+    </div>
+    <div class = "form">
+        <form action = "../index.html">
+            First Name:<br>
+            <input type="text" name="firstname" placeholder="First Name"><br>
+            Last Name: <br>
+            <input type="text" name="lastname" placeholder="Last Name"><br>
+            Email Address: <br>
+            <input type="text" name="emailaddress" placeholder="Email Address"><br>
+            <input type="submit" value = "Submit">
+        </form>
+    </div>
+    <div class = "ending">
+        <h4>Thank You for Donating</h4>
+        <p id = "paragraph">Upon clicking Submit you will be brought back to the Home Page</p>
     </div>
 </body>
+

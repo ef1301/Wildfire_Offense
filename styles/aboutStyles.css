@@ -28,7 +28,7 @@
 }
 
 .abcontainer p {
-    font-size: 18px;
+    font-size: 1.5vw;
     font-family: gnuolane;
     color: white;
     letter-spacing: 2px;
@@ -39,12 +39,12 @@
 }
 
 .abcontainer h1 {
-    font-size: 24px;
+    font-size: 2vw;
     font-family: clab;
 }
 
 .abcontainer h2 {
-    font-size: 20px;
+    font-size: 1.75vw;
     font-family: gnuolane;
     letter-spacing: 2px;
 }
@@ -54,12 +54,12 @@
 }
  
 /* Columns ----------------------------------*/
-.column {
-  float: left;
-  width: 32.32%;
+.column 
+{ 
+  width: 33.33%;
   padding: 0.5%;
-  height: 30%;
 }
+
 
 .column h2 {
 	font-family: clab;
@@ -72,11 +72,20 @@
 }
 
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row {
+	display: flex;
+	width: 100%;
+	height: auto;
 }
+
+.row h2 {
+	font-size: 2vw;
+}
+
+.row p {
+	font-size: 1.40vw;
+}
+
 
 /* Social Media Icons */
 .fa {
@@ -94,8 +103,18 @@
   display: inline-block;
 }
 
+.footer p
+{
+	font-size: 1.15vw;
+}
+
 .social_icons
 {
   display: inline-block;
   margin-left: 25%;
+}
+
+.social_icons a
+{
+	height: 70%;
 }

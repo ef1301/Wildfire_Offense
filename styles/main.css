@@ -38,7 +38,6 @@ body {
     background-color: red;
     font-family: clab;
     padding: 1.5%;
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -126,6 +125,13 @@ body {
 .container h2 {
     font-size: 20px;
     font-family: gnuolane;
+    letter-spacing: 2px;
+}
+
+.container p {
+    font-size: 18px;
+    font-family: gnuolane;
+    color: white;
     letter-spacing: 2px;
 }
 

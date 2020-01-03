@@ -34,7 +34,7 @@ body {
 
 }
 
-/* TOP BAR -----------------------------------------------------*/
+/* HEADER  & NAVIGATION-----------------------------------------------------*/
 .header {
     background-color: red;
     font-family: clab;
@@ -89,7 +89,7 @@ body {
     border-right:solid 1px #fff;/* This will not give border to last li element */
 }
 
-/* BOTTOM BAR------------------------------------------*/
+/* FOOTER ------------------------------------------*/
 .footer_container {
     position: relative;
     left: 0;
@@ -113,12 +113,44 @@ body {
 {
     height: auto !important;
     height: 100%
-    
+	       
 }
 
 .footer_container, .push {
     height: auto;
     padding: 1%
+}
+
+/* Social Media Icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+}
+
+.footer_text
+{
+    display: inline-block;
+}
+
+.footer p
+{
+    font-size: 1.15vw;
+}
+
+.social_icons
+{
+    display: inline-block;
+    margin-left: 25%;
+}
+
+.social_icons a
+{
+    height: 70%;
 }
 
 /* CONTAINER-------------------------------------------*/
@@ -129,7 +161,6 @@ body {
     margin-right: auto;
     text-align: center;
     padding: 1% 1%;
-    height: auto;
     box-shadow: 4px 4px #222;
 }
 
@@ -215,21 +246,21 @@ body {
 
 
 .centered span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .centered:hover span {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 .centered:hover span:after {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0;
 }
 
 .centered a {
@@ -244,26 +275,35 @@ body {
     font-size: 5vw;
 }
 
+/* DIVIDED CONTAINER ------------------------------------------------*/
 .split {
     height: 100%;
     width: 50%;
-    position: relative;
-    z-index:1;
-    top: 0;
-    margin-left: 5%;
-    overflow-x: hidden;
+    display: inline;
+    overflow: hidden;
     color: white;
     text-align:left;
 }
 
 .left {
-    height: 50%;
     left: 0;
+    width: 50%
+}
+
+.left img {
+    
 }
 
 .right {
-    right:0;
+    right: 0;	     
+    width: 50%;
 }
+
+.right img {
+
+}
+
+/* Parallax ------------------------------------------------*/
 
 .bgimg-1, .bgimg-2 {
     background-attachment: fixed;
@@ -282,6 +322,7 @@ body {
     height: 40%;
 }
 
+/* Container hyperlinks ----------------------------------------- */
 h2 a {
     color: red;
 }

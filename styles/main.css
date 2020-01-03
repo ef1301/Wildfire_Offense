@@ -1,6 +1,25 @@
+/* FONTS -------------------------------------------------------*/
+@font-face { 
+    font-family: cosima;
+    src: url("../fonts/cosima.otf") format("opentype");
+}
+
+@font-face {
+    font-family: clab;
+    src: url("../fonts/clab_reg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: gnuolane;
+    src: url("../fonts/gnuolane.ttf");
+}
+
+
+/* GENERAL -----------------------------------------------------*/
+
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 html, body {
@@ -16,7 +35,10 @@ body {
 /* TOP BAR -----------------------------------------------------*/
 .header {
     background-color: red;
+    font-family: clab;
     padding: 1.5%;
+    top: 0;
+    width: 100%;
 }
 
 .header h1{
@@ -24,11 +46,14 @@ body {
 }
 
 .topnav {
-    width: 25%;
+    margin: 0;
+    width: 27%;
+    font-family: clab;
     float: right;    
-    display: inline;
+    /* display: inline; */
     overflow: hidden;
     background-color: red;
+
 }
 
 .topnav a {
@@ -37,28 +62,81 @@ body {
     color: black;
     text-align: right;
     padding: 2% 5%;
-    font-size: 1.15em;
+    font-size: 1.15vw;
     text-decoration: none;
 }
 
 .topnav a:hover {
-    background-color: #333;
     color: #ddd;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav li {
+    float:left;
+    padding: 2.5%;
+}
+
+.topnav li:not(:last-child) { 
+    border-right:solid 1px #fff;/* This will not give border to last li element */
+}
+
+/* BOTTOM BAR------------------------------------------*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    font-family: gnuolane;
+    padding: 0.6%;
+    height: 7%;
+    color: #ededed;
+    letter-spacing: 2px;
 }
 
 /* CONTAINER-------------------------------------------*/
 .container{
-    background-color: #333;
+    background-color: #222;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding: 1% 1%;
     height: auto;
+    box-shadow: 4px 4px #222;
 }
 
 .container h1, h2 {
     color: white;
+}
+
+.container h1 {
+    font-size: 24px;
+    font-family: clab;
+}
+
+.container h2 {
+    font-size: 20px;
+    font-family: gnuolane;
+    letter-spacing: 2px;
+}
+
+.container p {
+    font-size: 18px;
+    font-family: gnuolane;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.container:link {
+    color: #f9cb25;
 }
 
 /* PLACEMENT OVER IMAGES --------------------------------*/
@@ -67,6 +145,9 @@ body {
     position: absolute;
     top: 10%;
     left: 23%;
+    letter-spacing: 1px;
+    font-family: gnuolane;
+    font-size: 22px;
 }
 
 .bottom-right {
@@ -74,6 +155,9 @@ body {
     position: absolute;
     bottom: 10%;
     right: 23%;
+    letter-spacing: 1px;
+    font-family: gnuolane;
+    font-size: 22px;
 }
 
 .centered {
@@ -82,6 +166,48 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: gnuolane;
+    font-size: 45px;
+    box-shadow: 2px 2px 4px #222;
+    border-radius: 4px;
+    border: none;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.centered span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.centered span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.centered:hover span {
+  padding-right: 25px;
+}
+
+.centered:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.centered a {
+    text-decoration: none;
+}
+
+.centered a:visited {
+    color: black;
 }
 
 .split {
@@ -129,6 +255,6 @@ h2 a {
 h2 a:visited {
     color: red;
 }
-
+/* 
 img {    
-}
+} */

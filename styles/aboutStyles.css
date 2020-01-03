@@ -1,0 +1,74 @@
+/* Unused -----------------------------------*/
+/*.mainbanner {
+	height: auto;
+	padding: 1% 1%;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-color: rgba(34, 34, 34, 0.75);
+	font-family: gnuolane;
+	color: white;
+}*/
+
+/* About Containers -------------------------*/
+.abcontainer {
+	background-color: rgba(34, 34, 34, 0.9);
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 1% 1%;
+	height: auto;
+	box-shadow: 4px 4px #222;
+}
+
+.abcontainer p {
+    font-size: 18px;
+    font-family: gnuolane;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.abcontainer h1, h2 {
+    color: white;
+}
+
+.abcontainer h1 {
+    font-size: 24px;
+    font-family: clab;
+}
+
+.abcontainer h2 {
+    font-size: 20px;
+    font-family: gnuolane;
+    letter-spacing: 2px;
+}
+
+.abcontainer:link {
+    color: #f9cb25;
+}
+ 
+/* Columns ----------------------------------*/
+.column {
+  float: left;
+  width: 32.32%;
+  padding: 0.5%;
+}
+
+.column h2 {
+	font-family: clab;
+}
+
+.column p {
+	font-family: gnuolane;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Climate Change</title>
+    <title>Wildfires Offense</title>
     <!--Allows input characters to be encoded using UTF-8 standards-->
     <meta charset="utf-8"> 
     <!--Allows size of webpage to adjust to differnt device screen sizes, e.g. phones vs desktops-->
@@ -10,10 +10,95 @@
     <meta name="description" content="Assignment 1 CUNY2x">
     <!--reference to CSS file storing the design of the webpage-->
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/donate.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <h1>Volunteer</h1>
-    <div>
-
+  
+  <div class="header">
+    <img src="../img/icon.png" style="width:2%">
+    <h1>Wildfires Offense</h1>
+    <div class="topnav">
+      <ul>
+        <li><a class="active" href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./donation.html">Donation</a></li>
+      </ul>
     </div>
+  </div>
+
+  <div class="donation-container">
+    <div class="donation-box">
+      <div class="donation-wrapper">
+        <div class="title">Donation Information</div>
+        <div class="fields">
+          <input type="text" id="firstName" placeholder="First Name"> </input>
+          <input type="text" id="lastName" placeholder="Last Name"> </input>
+          <input type="text" id="email" placeholder="Email"> </input>
+        </div>
+        
+        <div class="amount">
+          <select>
+            <option value="">SELECT</option>
+            <option value="$5">$5</option>
+            <option value="$10">$10</option>
+            <option value="$30">$30</option>
+            <option value="$50">$50</option>
+            <option value="$100">$100</option>
+          </select>
+          <!-- <div class="button">$30</div>
+               <div class="button">$50</div>
+               <div class="button">$100</div> -->
+          <p class="custom">Custom</p>
+          <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+        </div>
+        
+        <div class="switch">
+          <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+          <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+          <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+          <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+          <span class="switch-selection"></span>
+        </div>
+        
+        <div class="checkboxes">
+          <input type="checkbox" id="receipt" class="checkbox" />
+          <label for="receipt">Email Me A Receipt</label>
+          <br />
+          <input type="checkbox" id="anon" class="checkbox" />
+          <label for="anon">Give Anonymously</label>
+          <br />
+          <input type="checkbox" id="list" class="checkbox" />
+          <label for="list">Add Me To Email List</label>
+        </div>
+        
+        <div class="confirm">
+          
+        </div>
+        
+        <button id="donate-button" onclick="location.href = '../index.html';" id="myButton" class="float-left submit-button" >Donate</button>
+        <!-- //<div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div> -->
+      </div>
+    </div>
+    <h4>Your donations to Wildfires Offense will help transform lives.</h4>
+    <p id = "paragraph">Upon clicking Donate  you will be brought back to the Home Page</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer_container">
+    <div class="footer">
+      <div class= "footer_text">
+        <p> © WildfiresOffense 2019 | 161 Sussex St, Sydney, NSW 2001 | 0402 228 158 | contact@wildfiresoffense.org</p>
+      </div>
+      <div class="social_icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>  
+  </div>
 </body>
+</html>

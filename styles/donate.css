@@ -22,9 +22,14 @@
 }
 
 body {
+    background-image: url(../img/080818_WhitebarkPlanting_Ouellet_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    
+    /* background-color: white; */
 }
 
 /* TOP BAR -----------------------------------------------------*/
@@ -133,7 +138,7 @@ body {
 }
 
 /* BOTTOM BAR------------------------------------------*/
-.footer {
+.footer, .push {
     position: relative;
     left: 0;
     bottom: 0;
@@ -160,39 +165,48 @@ body {
 } */
 
 /* DONATION-------------------------------------------------------------------------------- */
+
 .donation-container {
 	height: 100%;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 12px;
 	text-transform: uppercase;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 h4{
     text-transform: none;
     text-align: center;
+    color: white;
     padding: 0px;
     margin-bottom: 0px;
 }
 #paragraph{
-    color: black;
+    color: white;
     text-transform: none;
     text-align: center;
+    font-size: 15px;
     padding: 1%;
     margin: 1%;
     margin-top: 0px;
 }
 
+.custom{
+    color: black;
+    text-align: center;
+    margin: 2px;
+}
+
 .donation-box {
-	width: 390px;
-	height: 386px;
+	width: 500px;
+	height: 500px;
 	background-color: #F5F5F5;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+    display: inline-block;
+    margin-left: 8%;
 	
 	-webkit-transition: all 0.15s ease-out;
 	-moz-transition: all 0.15s ease-out;
@@ -310,9 +324,9 @@ h4{
 	background-color: #393939;
 } */
 
-.donation-box .amount .button:active {
+/* .donation-box .amount .button:active {
 	background-color: pink;
-}
+} */
 
 /* .donation-box .amount .button:focus {
 	background-color: pink;
@@ -442,10 +456,10 @@ h4{
 	-o-transition: all 0.15s ease-out;
 	transition: all 0.15s ease-out;
 }
-
+/* 
 .checkbox:active, .checkbox:checked:active {
 	
-}
+} */
 
 .checkbox:checked {
 	background-color: red;

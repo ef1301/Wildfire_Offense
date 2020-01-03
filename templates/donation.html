@@ -40,57 +40,61 @@
             <input type="submit" value = "Submit">
         </form>
     </div> -->
-
     <div class="donation-container">
         <div class="donation-box">
-            <div class="title">Donation Information</div>
-            <div class="fields">
-                <input type="text" id="firstName" placeholder="First Name"> </input>
-                <input type="text" id="lastName" placeholder="Last Name"> </input>
-                <input type="text" id="email" placeholder="Email"> </input>
-            </div>
-            
-            <div class="amount">
-                <select>
-                    <option value="">select</option>
-                    <option value="$30">$30</option>
-                    <option value="$50">$50</option>
-                    <option value="$100">$100</option>
-                </select>
-                <!-- <div class="button">$30</div>
-                <div class="button">$50</div>
-                <div class="button">$100</div> -->
-                <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
-            </div>
-            
-            <div class="switch">
-                <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
-                <label for="one-time" class="switch-label switch-label-off">One-Time</label>
-                <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-                <label for="monthly" class="switch-label switch-label-on">Monthly</label>
-                <span class="switch-selection"></span>
-            </div>
-            
-            <div class="checkboxes">
-                <input type="checkbox" id="receipt" class="checkbox" />
-                <label for="receipt">Email Me A Receipt</label>
-                <br />
-                <input type="checkbox" id="anon" class="checkbox" />
-                <label for="anon">Give Anonymously</label>
-                <br />
-                <input type="checkbox" id="list" class="checkbox" />
-                <label for="list">Add Me To Email List</label>
-            </div>
-            
-            <div class="confirm">
+            <div class="donation-wrapper">
+                <div class="title">Donation Information</div>
+                <div class="fields">
+                    <input type="text" id="firstName" placeholder="First Name"> </input>
+                    <input type="text" id="lastName" placeholder="Last Name"> </input>
+                    <input type="text" id="email" placeholder="Email"> </input>
+                </div>
                 
+                <div class="amount">
+                    <select>
+                        <option value="">select</option>
+                        <option value="$5">$5</option>
+                        <option value="$10">$10</option>
+                        <option value="$30">$30</option>
+                        <option value="$50">$50</option>
+                        <option value="$100">$100</option>
+                    </select>
+                    <!-- <div class="button">$30</div>
+                    <div class="button">$50</div>
+                    <div class="button">$100</div> -->
+                    <p class="custom">Custom</p>
+                    <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+                </div>
+                
+                <div class="switch">
+                    <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+                    <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+                    <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+                    <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+                    <span class="switch-selection"></span>
+                </div>
+                
+                <div class="checkboxes">
+                    <input type="checkbox" id="receipt" class="checkbox" />
+                    <label for="receipt">Email Me A Receipt</label>
+                    <br />
+                    <input type="checkbox" id="anon" class="checkbox" />
+                    <label for="anon">Give Anonymously</label>
+                    <br />
+                    <input type="checkbox" id="list" class="checkbox" />
+                    <label for="list">Add Me To Email List</label>
+                </div>
+                
+                <div class="confirm">
+                    
+                </div>
+                
+                <button id="donate-button" onclick="location.href = '../index.html';" id="myButton" class="float-left submit-button" >Donate</button>
+                <!-- //<div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div> -->
             </div>
-            
-            <button id="donate-button" onclick="location.href = '../index.html';" id="myButton" class="float-left submit-button" >Donate Now</button>
-            <!-- //<div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div> -->
-        </div>
+            </div>
         <h4>Thank You for Donating</h4>
-        <p id = "paragraph">Upon clicking Donate Now you will be brought back to the Home Page</p>
+        <p id = "paragraph">Upon clicking Donate  you will be brought back to the Home Page</p>
     </div>
 
     <!-- Footer -->

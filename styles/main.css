@@ -30,9 +30,11 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+    position: relative;
+
 }
 
-/* TOP BAR -----------------------------------------------------*/
+/* HEADER  & NAVIGATION-----------------------------------------------------*/
 .header {
     background-color: red;
     font-family: clab;
@@ -41,7 +43,9 @@ body {
     width: 100%;
 }
 
+
 .header h1{
+    font-size: 2vw;
     display: inline;
 }
 
@@ -50,7 +54,6 @@ body {
     width: 27%;
     font-family: clab;
     float: right;    
-    /* display: inline; */
     overflow: hidden;
     background-color: red;
 
@@ -60,7 +63,7 @@ body {
     float: left;
     display: block;
     color: black;
-    text-align: right;
+    text-align: center;
     padding: 2% 5%;
     font-size: 1.15vw;
     text-decoration: none;
@@ -86,8 +89,8 @@ body {
     border-right:solid 1px #fff;/* This will not give border to last li element */
 }
 
-/* BOTTOM BAR------------------------------------------*/
-.footer {
+/* FOOTER ------------------------------------------*/
+.footer_container {
     position: relative;
     left: 0;
     bottom: 0;
@@ -101,6 +104,55 @@ body {
     letter-spacing: 2px;
 }
 
+.footer
+{
+
+}
+
+.wrapper
+{
+    height: auto !important;
+    height: 100%
+	       
+}
+
+.footer_container, .push {
+    height: auto;
+    padding: 1%
+}
+
+/* Social Media Icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+}
+
+.footer_text
+{
+    display: inline-block;
+}
+
+.footer p
+{
+    font-size: 1.15vw;
+}
+
+.social_icons
+{
+    display: inline-block;
+    margin-left: 25%;
+}
+
+.social_icons a
+{
+    height: 70%;
+}
+
 /* CONTAINER-------------------------------------------*/
 .container{
     background-color: #222;
@@ -109,27 +161,27 @@ body {
     margin-right: auto;
     text-align: center;
     padding: 1% 1%;
-    height: auto;
     box-shadow: 4px 4px #222;
 }
 
 .container h1, h2 {
     color: white;
+    font-size: 1.25vw;
 }
 
 .container h1 {
-    font-size: 24px;
+    font-size: 1.75vw;
     font-family: clab;
 }
 
 .container h2 {
-    font-size: 20px;
+    font-size: 1.25vw;
     font-family: gnuolane;
     letter-spacing: 2px;
 }
 
 .container p {
-    font-size: 18px;
+    font-size: 1vw;
     font-family: gnuolane;
     color: white;
     letter-spacing: 2px;
@@ -139,25 +191,38 @@ body {
     color: #f9cb25;
 }
 
+.container img {
+    width: 60%;
+}
 /* PLACEMENT OVER IMAGES --------------------------------*/
 .top-left {
+    width: 40%;
     text-align: left;
     position: absolute;
     top: 10%;
     left: 23%;
     letter-spacing: 1px;
     font-family: gnuolane;
-    font-size: 22px;
+    font-size: 1.5vw;
+}
+
+.top-left h2 {
+    font-size: 5vw;
 }
 
 .bottom-right {
+    width: 40%;
     text-align: right;
     position: absolute;
     bottom: 10%;
     right: 23%;
     letter-spacing: 1px;
     font-family: gnuolane;
-    font-size: 22px;
+    font-size: 1.5vw;
+}
+
+.bottom-right h2 {
+    font-size: 5vw;
 }
 
 .centered {
@@ -167,13 +232,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: gnuolane;
-    font-size: 45px;
-    box-shadow: 2px 2px 4px #222;
+    font-size: 2.75vw;
     border-radius: 4px;
     border: none;
     transition: all 0.4s;
     cursor: pointer;
-    margin: 5px;
+    margin: .5vw;
 }
 
 .centered span {
@@ -185,21 +249,21 @@ body {
 
 
 .centered span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .centered:hover span {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 .centered:hover span:after {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0;
 }
 
 .centered a {
@@ -210,26 +274,11 @@ body {
     color: black;
 }
 
-.split {
-    height: 100%;
-    width: 50%;
-    position: relative;
-    z-index:1;
-    top: 0;
-    margin-left: 5%;
-    overflow-x: hidden;
-    color: white;
-    text-align:left;
+.centered h2 {
+    font-size: 5vw;
 }
 
-.left {
-    height: 50%;
-    left: 0;
-}
-
-.right {
-    right:0;
-}
+/* Parallax ------------------------------------------------*/
 
 .bgimg-1, .bgimg-2 {
     background-attachment: fixed;
@@ -248,6 +297,7 @@ body {
     height: 40%;
 }
 
+/* Container hyperlinks ----------------------------------------- */
 h2 a {
     color: red;
 }

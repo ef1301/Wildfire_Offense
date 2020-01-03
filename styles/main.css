@@ -13,7 +13,6 @@
     font-family: gnuolane;
     src: url("../fonts/gnuolane.ttf");
 }
-}
 
 
 /* GENERAL -----------------------------------------------------*/
@@ -47,10 +46,11 @@ body {
 }
 
 .topnav {
-    width: 25%;
+    margin: 0;
+    width: 27%;
     font-family: clab;
     float: right;    
-    display: inline;
+    /* display: inline; */
     overflow: hidden;
     background-color: red;
 
@@ -62,7 +62,7 @@ body {
     color: black;
     text-align: right;
     padding: 2% 5%;
-    font-size: 1.15em;
+    font-size: 1.15vw;
     text-decoration: none;
 }
 
@@ -255,6 +255,6 @@ h2 a {
 h2 a:visited {
     color: red;
 }
-
+/* 
 img {    
-}
+} */

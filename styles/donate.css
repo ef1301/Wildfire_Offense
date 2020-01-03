@@ -97,3 +97,14 @@ body {
     color: black;
 }
 
+/* body{
+    background-image: url("../img/endingDestruction.jpg");
+} */
+
+.form{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+}

@@ -10,6 +10,9 @@
     <meta name="description" content="Assignment 1 CUNY2x">
     <!--reference to CSS file storing the design of the webpage-->
     <link rel="stylesheet" type="text/css" href="../styles/donate.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
     <div class="header">
@@ -26,7 +29,7 @@
       </div>
     <br>
     <br>
-    <div class = "form">
+    <!-- <div class = "form">
         <form action = "../index.html">
             First Name:<br>
             <input type="text" name="firstname" placeholder="First Name"><br>
@@ -36,10 +39,63 @@
             <input type="text" name="emailaddress" placeholder="Email Address"><br>
             <input type="submit" value = "Submit">
         </form>
+    </div> -->
+
+    <div class="donation-container">
+        <div class="donation-box">
+            <div class="title">Donation Information</div>
+            <div class="fields">
+                <input type="text" id="firstName" placeholder="First Name"> </input>
+                <input type="text" id="lastName" placeholder="Last Name"> </input>
+                <input type="text" id="email" placeholder="Email"> </input>
+            </div>
+            
+            <div class="amount">
+                <div class="button">$30</div>
+                <div class="button">$50</div>
+                <div class="button">$100</div>
+                <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+            </div>
+            
+            <div class="switch">
+                <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+                <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+                <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+                <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+                <span class="switch-selection"></span>
+            </div>
+            
+            <div class="checkboxes">
+                <input type="checkbox" id="receipt" class="checkbox" />
+                <label for="receipt">Email Me A Receipt</label>
+                <br />
+                <input type="checkbox" id="anon" class="checkbox" />
+                <label for="anon">Give Anonymously</label>
+                <br />
+                <input type="checkbox" id="list" class="checkbox" />
+                <label for="list">Add Me To Email List</label>
+            </div>
+            
+            <div class="confirm">
+                
+            </div>
+            
+            <button id="donate-button" onclick="location.href = '../index.html';" id="myButton" class="float-left submit-button" >Donate Now</button>
+            <!-- //<div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div> -->
+        </div>
+        <h4>Thank You for Donating</h4>
+        <p id = "paragraph">Upon clicking Donate Now you will be brought back to the Home Page</p>
     </div>
-    <div class = "footer">
+
+    <!-- Footer -->
+    <div class="footer">
+        <p> © WildfiresOffense 2019 | 161 Sussex St, Sydney, NSW 2001 | 0402 228 158 | contact@wildfiresoffense.org</p>
+    </div>
+    <!-- <div class = "footer">
         <h4>Thank You for Donating</h4>
         <p id = "paragraph">Upon clicking Submit you will be brought back to the Home Page</p>
-    </div>
+    </div> -->
+
+    
 </body>
 
